@@ -34,8 +34,8 @@ const LatestBlocks = () => {
     <div>
       {posts.length > 0 ? (
         <ul>
-          {posts.map((value) => {
-            return <li>{value.title}</li>
+          {posts.map((value, index) => {
+            return <li key={index}>{value.title}</li>
           })}
         </ul>
       ) : (
