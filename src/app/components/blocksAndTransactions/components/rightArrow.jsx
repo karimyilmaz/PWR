@@ -1,22 +1,22 @@
-const RightArrow = () => {
+const StraightRightArrow = () => {
   return (
     <svg
-      width='20'
-      height='20'
+      width='24'
+      height='24'
       viewBox='0 0 24 24'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
       <path
-        d='M15 10L20 15L15 20'
-        stroke='#9C9BB3'
+        d='M5 12H19'
+        stroke='#1E1F31'
         strokeWidth='1.5'
         strokeLinecap='round'
         strokeLinejoin='round'
       />
       <path
-        d='M4 4V11C4 12.0609 4.42143 13.0783 5.17157 13.8284C5.92172 14.5786 6.93913 15 8 15H20'
-        stroke='#9C9BB3'
+        d='M12 5L19 12L12 19'
+        stroke='#1E1F31'
         strokeWidth='1.5'
         strokeLinecap='round'
         strokeLinejoin='round'
@@ -25,4 +25,4 @@ const RightArrow = () => {
   )
 }
 
-export default RightArrow
+export default StraightRightArrow

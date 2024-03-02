@@ -1,0 +1,145 @@
+#footer {
+  background: var(--gray-bg);
+  padding: 65px 16px;
+}
+
+@media (max-width: 760px) {
+  #footer {
+    padding: 25px 16px 15px 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  #footer {
+    padding: 65px 85px;
+  }
+}
+
+.inner_footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 760px) {
+  .inner_footer {
+    flex-direction: column;
+  }
+}
+
+.inner_footer div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner_footer div:nth-child(1) ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-left: 5px;
+}
+
+@media (max-width: 760px) {
+  .inner_footer div:nth-child(1) ul {
+    flex-wrap: wrap;
+  }
+}
+
+.inner_footer div:nth-child(1) ul li:hover {
+  color: var(--link-hover-color);
+}
+
+.inner_footer div:nth-child(2) {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 760px) {
+  .inner_footer div:nth-child(2) {
+    margin-top: 20px;
+  }
+}
+
+.inner_footer div:nth-child(2) label {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--text-size);
+}
+
+.inner_footer div:nth-child(2) input {
+  margin-top: 10px;
+  outline: none;
+  font: inherit;
+  background: white;
+  border: 1px solid #deddf6;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+
+#container_social {
+  border-top: 1px solid #deddf6;
+  padding-top: 20px;
+  padding-left: 5px;
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 760px) {
+  #container_social {
+    flex-wrap: wrap;
+  }
+}
+
+#container_social button {
+  border-radius: 16px;
+  background: var(--semi-black-text-color);
+  font-size: 0.75rem;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  width: 134px;
+  height: 60px;
+  padding: 12px 16px;
+}
+
+#bottom_bar_footer {
+  padding-left: 5px;
+  padding-top: 40px;
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  #bottom_bar_footer {
+    flex-direction: column;
+  }
+}
+
+#bottom_bar_footer span {
+  font-size: var(--text-size);
+  font-weight: 500;
+}
+
+#bottom_bar_footer nav {
+  margin-left: auto;
+  padding-right: 10px;
+  font-size: var(--text-size);
+  display: flex;
+  gap: 35px;
+  color: var(--gray-text-color);
+}
+
+#bottom_bar_footer nav a:hover {
+  color: var(--link-hover-color);
+}
+
+@media (max-width: 760px) {
+  #bottom_bar_footer nav {
+    margin: 20px 0 0 5px;
+  }
+}

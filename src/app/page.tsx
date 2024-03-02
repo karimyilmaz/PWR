@@ -8,7 +8,8 @@ import Globe from './components/icons/globe'
 import Transactions from './components/icons/transaction'
 import Clock from './components/icons/clock'
 import Chain from './components/icons/chain'
-import LatestBlocks from './components/latestBlock'
+import LatestBlocks from './components/blocksAndTransactions/latestBlocks'
+import LatestTransactions from './components/blocksAndTransactions/latestTransactions'
 
 export default function Home() {
   return (
@@ -104,8 +105,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <LatestBlocks />
+      <div id={styles.blocks_transactions_container}>
+        <LatestBlocks />
+        <LatestTransactions />
+      </div>
     </main>
   )
 }

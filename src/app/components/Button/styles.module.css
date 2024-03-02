@@ -1,0 +1,9 @@
+#btn {
+  padding: 7px 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}

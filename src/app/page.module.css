@@ -1,15 +1,22 @@
 .main {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   padding: 100px 16px;
   min-height: 100vh;
+  background-color: white;
+  background: white;
+}
+
+@media (min-width: 1280px) {
+  .main {
+    padding: 100px 85px;
+  }
 }
 
 .main h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 #filter_container {
@@ -26,7 +33,7 @@
   border-radius: 16px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 760px) {
   #filter_container {
     width: auto;
   }
@@ -46,17 +53,17 @@
 
 #selectfilter_btn {
   border-radius: 10px;
-  background: #f9f8ff;
+  background: var(--gray-bg);
   text-transform: capitalize;
 }
 
 #submit_btn {
   margin-left: auto;
   background: transparent;
-  color: #9c9bb3;
+  color: var(--gray-text-color);
 }
 
-@media (max-width: 601px) {
+@media (max-width: 760px) {
   #submit_btn {
     display: none;
   }
@@ -69,7 +76,7 @@
   min-height: 100%;
   padding-left: 8px;
   border: none;
-  color: #9c9bb3;
+  color: var(--gray-text-color);
   font-size: 0.8rem;
 }
 
@@ -96,18 +103,12 @@
   flex: 1;
 }
 
-/* .grid_item_wrapper div {
-  display: flex;
-  align-items: center;
-  background: #f9f8ff;
-} */
-
 .inner_container_grid_item,
 #container {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: #f9f8ff;
+  background: var(--gray-bg);
   border-radius: 12px;
   padding: 15px;
 }
@@ -118,7 +119,7 @@
   flex-direction: column;
   gap: 5px;
   text-transform: uppercase;
-  color: #9c9bb3;
+  color: var(--gray-text-color);
   font-size: 0.8rem;
 }
 
@@ -164,9 +165,9 @@
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  color: #9c9bb3;
+  color: var(--gray-text-color);
   font-size: 0.8rem;
-  background: #f9f8ff;
+  background: var(--gray-bg);
   border-radius: 12px;
   padding: 15px;
 }
@@ -192,6 +193,7 @@
 }
 
 #img_container img {
+  -o-object-fit: contain;
   object-fit: contain;
 }
 
@@ -212,5 +214,20 @@
 @media (max-width: 760px) {
   #img_container_wrapper div:nth-child(2) {
     display: none;
+  }
+}
+
+#blocks_transactions_container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 760px) {
+  #blocks_transactions_container {
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
   }
 }
